@@ -1,8 +1,12 @@
 import Chai from "./Try";
 function App() {
+
+  const username = "Ankit Raj"
+
+
   return (
     <>
-      <h1>Hello World! | Ankit Raj</h1>
+      <h1>Hello World! | {username}</h1> 
       <Chai />
     </>
   );
