@@ -8,6 +8,7 @@ function Layout() {
     <>
       <Header />
       <Outlet />
+      {/* This is where the child components defined by the routes will be rendered. When a route is matched, the corresponding component is displayed in place of the Outlet. It's like a placeholder for the dynamic content that changes based on the current route. */}
       <Footer />
     </>
   )

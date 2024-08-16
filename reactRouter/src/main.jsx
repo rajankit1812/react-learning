@@ -30,7 +30,7 @@ import Github from './components/Github/Github'
 //   }
 // ])
 
-const router = createBrowserRouter(
+const router = createBrowserRouter(       //This function is used to define the route configuration. It returns a router object that contains information about all the routes in your application.
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
       <Route path='' element={<Home/>}/>
@@ -44,6 +44,7 @@ const router = createBrowserRouter(
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router} /> 
+    {/* RouterProvider is a component from React Router v6 that helps manage the navigation and routing in your React application. It takes a router object as a prop, which contains all the information about your routes (like which component to show for each URL). It makes sure that when you click on links or change the URL, the correct component is shown. */}
   </StrictMode>,
 )
