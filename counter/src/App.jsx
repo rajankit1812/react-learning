@@ -11,7 +11,7 @@ function App() {
   const addValue = () => {
     // counter = counter + 1
     setCounter(prevCounter => prevCounter + 1)    //yha hm previous state lerhe hai isliye update krparhe hai nhi to counter+1 krne se update nhi hogi value as patches me jti hai and ab ye callback function aagya to jb ek complete hoga tbhi aage ayga. here as we are taking previous state to ek jan kaam chhodega tbhi dusra krega n isliye ek execute hoga tbhi dusra hoga
-    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)    //In a synchronous block of code (like inside an event handler), React will often batch these updates, applying them all at once.
     setCounter(prevCounter => prevCounter + 1)
     setCounter(prevCounter => prevCounter + 1)
     
